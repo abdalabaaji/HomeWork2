@@ -13,13 +13,13 @@ public class MainActivity extends Activity {
 
     TextView onCreateTv, onStartTv, onResumeTv, onPauseTv, onStopTv, onRestartTv, onDestroyTv;
 
-    int onCreateCounter =0;
-    int onStartCounter =0;
-    int onPauseCounter =0;
-    int onResumeCounter =0;
-    int onStopCounter =0;
-    int onRestartCounter =0 ;
-    int onDestroyCounter =0;
+    int onCreateCounter = 0;
+    int onStartCounter = 0;
+    int onPauseCounter = 0;
+    int onResumeCounter = 0;
+    int onStopCounter = 0;
+    int onRestartCounter = 0;
+    int onDestroyCounter = 0;
 
     // TODO :
     // Create all the 7 Key tags you will be using for restoring the bundle values
@@ -53,7 +53,7 @@ public class MainActivity extends Activity {
             2. update the view by calling displayCounts()
         */
 
-            displayCounts();
+        displayCounts();
     }
 
     // lifecycle callback overrides
@@ -150,8 +150,6 @@ public class MainActivity extends Activity {
     // update the views for counts
 
     public void displayCounts() {
-
-        Log.d("onCreateCounter" , ""+onCreateCounter);
 
         onCreateTv.setText("1. No. of onCreate() Method Calls = " + onCreateCounter);
         onStartTv.setText("2. No. of onStart() Method Calls = " + onStartCounter);
